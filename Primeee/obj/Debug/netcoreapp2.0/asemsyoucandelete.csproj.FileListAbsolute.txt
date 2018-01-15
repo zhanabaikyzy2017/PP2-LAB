@@ -1,0 +1,11 @@
+/Users/balnur00/Projects/asemsyoucandelete/bin/Debug/netcoreapp2.0/asemsyoucandelete.deps.json
+/Users/balnur00/Projects/asemsyoucandelete/bin/Debug/netcoreapp2.0/asemsyoucandelete.runtimeconfig.json
+/Users/balnur00/Projects/asemsyoucandelete/bin/Debug/netcoreapp2.0/asemsyoucandelete.runtimeconfig.dev.json
+/Users/balnur00/Projects/asemsyoucandelete/bin/Debug/netcoreapp2.0/asemsyoucandelete.dll
+/Users/balnur00/Projects/asemsyoucandelete/bin/Debug/netcoreapp2.0/asemsyoucandelete.pdb
+/Users/balnur00/Projects/asemsyoucandelete/obj/Debug/netcoreapp2.0/asemsyoucandelete.csprojResolveAssemblyReference.cache
+/Users/balnur00/Projects/asemsyoucandelete/obj/Debug/netcoreapp2.0/asemsyoucandelete.csproj.CoreCompileInputs.cache
+/Users/balnur00/Projects/asemsyoucandelete/obj/Debug/netcoreapp2.0/asemsyoucandelete.AssemblyInfoInputs.cache
+/Users/balnur00/Projects/asemsyoucandelete/obj/Debug/netcoreapp2.0/asemsyoucandelete.AssemblyInfo.cs
+/Users/balnur00/Projects/asemsyoucandelete/obj/Debug/netcoreapp2.0/asemsyoucandelete.dll
+/Users/balnur00/Projects/asemsyoucandelete/obj/Debug/netcoreapp2.0/asemsyoucandelete.pdb
