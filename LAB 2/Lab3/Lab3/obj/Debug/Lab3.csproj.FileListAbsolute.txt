@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\PP2-LAB\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\HP\Desktop\PP2-LAB\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\HP\Desktop\PP2-LAB\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\HP\Desktop\PP2-LAB\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\HP\Desktop\PP2-LAB\Lab3\Lab3\obj\Debug\Lab3.pdb
