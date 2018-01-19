@@ -4,3 +4,10 @@ D:\Desktop\PP2\Rectangle\Rectangle\bin\Debug\Rectangle.pdb
 D:\Desktop\PP2\Rectangle\Rectangle\obj\Debug\Rectangle.csprojResolveAssemblyReference.cache
 D:\Desktop\PP2\Rectangle\Rectangle\obj\Debug\Rectangle.exe
 D:\Desktop\PP2\Rectangle\Rectangle\obj\Debug\Rectangle.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Rectangle\Rectangle\bin\Debug\Rectangle.exe.config
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Rectangle\Rectangle\bin\Debug\Rectangle.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Rectangle\Rectangle\bin\Debug\Rectangle.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Rectangle\Rectangle\obj\Debug\Rectangle.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Rectangle\Rectangle\obj\Debug\Rectangle.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Rectangle\Rectangle\obj\Debug\Rectangle.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Rectangle\Rectangle\obj\Debug\Rectangle.pdb

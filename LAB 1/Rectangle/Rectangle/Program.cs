@@ -10,10 +10,15 @@ namespace Rectangle
     {
        public  int w;
        public int h;
+        public int area;
+        public int perimeter;
         public rectangle()
         {
             w = 1;
             h = 1;
+            area = 0;
+            perimeter = 0;
+
 
         }
         public rectangle(int w, int h)
@@ -23,31 +28,31 @@ namespace Rectangle
         }
         public override string ToString()
         {
-            return w + " " + h;
+            return w + " " + h + " " + area + " " + perimeter;
         }
-        public static int FindArea (int a, int b)
+       
+        public void Findarea()
         {
-            return a*b; 
+            area = w * h;
 
         }
 
-        public static int FindPerimeter(int a, int b)
+
+        public void FindPerimeter()
         {
-            return 2 * (a + b);
+            perimeter = 2 * (w + h);
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            rectangle r = new rectangle();
-            int ww = int.Parse(Console.ReadLine());
-            r.w = ww;
-            int hh = int.Parse(Console.ReadLine());
-            r.h = hh;
-            Console.WriteLine(r);
-            Console.WriteLine(rectangle.FindArea(ww, hh));
-            Console.WriteLine(rectangle.FindPerimeter(ww, hh));
+          
+            rectangle d = new rectangle(2,3);
+            d.Findarea();
+            d.FindPerimeter();
+            Console.WriteLine(d);
+
 
             Console.ReadKey();
 

@@ -6,40 +6,53 @@ using System.Threading.Tasks;
 
 namespace Circle
 {
-    public class circle
+    public class Circle
     {
         public int r;
+        public double area;
+        public double diameter;
+        public double circ;
 
-       public circle()
+       public Circle()
         {
             r = 1;
+            area = 0;
+            diameter = 0;
+            circ = 0;
         }
-        public static double FindArea(int a)
-        {
-           double p = 3.14;
-            return p * a * a;
-             
+        public Circle(int a){
+            r = a;
         }
-        public static int FindDiameter(int a)
+        public  void FindArea()
         {
-         
-            return 2 * a;
+            area = Math.PI * r * r;
         }
-        public static double FindCircumference(int a)
+        public void  FindDiameter()
         {
-            double p = 3.14;
-            return 2 * p * a;
+            diameter = 2 * r;
+        }
+        public void FindCircumference()
+        {
+            circ = 2 * Math.PI * r;
+        }
+        public override string ToString()
+        {
+            return area + " " + diameter + " " + circ;
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            circle c = new circle();
-            c.r = int.Parse(Console.ReadLine());
-            Console.WriteLine(circle.FindArea(c.r));
-            Console.WriteLine(circle.FindDiameter(c.r));
-            Console.WriteLine(circle.FindCircumference(c.r));
+            Circle c = new Circle(int.Parse(Console.ReadLine()));
+            c.FindArea();
+            c.FindDiameter();
+            c.FindCircumference();
+
+
+            Console.WriteLine(c);
+
+
 
             Console.ReadKey();
 

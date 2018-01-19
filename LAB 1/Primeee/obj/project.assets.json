@@ -16,11 +16,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\PP2-LAB\\asemsyoucandelete\\asemsyoucandelete.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\PP2-LAB\\LAB 1\\Primeee\\asemsyoucandelete.csproj",
       "projectName": "asemsyoucandelete",
-      "projectPath": "C:\\Users\\HP\\Desktop\\PP2-LAB\\asemsyoucandelete\\asemsyoucandelete.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\PP2-LAB\\LAB 1\\Primeee\\asemsyoucandelete.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\PP2-LAB\\asemsyoucandelete\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\PP2-LAB\\LAB 1\\Primeee\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,3 +3,10 @@ D:\Desktop\PP2\Circle\Circle\bin\Debug\Circle.exe
 D:\Desktop\PP2\Circle\Circle\bin\Debug\Circle.pdb
 D:\Desktop\PP2\Circle\Circle\obj\Debug\Circle.exe
 D:\Desktop\PP2\Circle\Circle\obj\Debug\Circle.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Circle\Circle\bin\Debug\Circle.exe.config
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Circle\Circle\bin\Debug\Circle.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Circle\Circle\bin\Debug\Circle.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Circle\Circle\obj\Debug\Circle.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Circle\Circle\obj\Debug\Circle.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Circle\Circle\obj\Debug\Circle.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 1\Circle\Circle\obj\Debug\Circle.pdb

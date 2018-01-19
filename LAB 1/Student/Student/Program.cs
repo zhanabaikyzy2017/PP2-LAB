@@ -6,19 +6,26 @@ using System.Threading.Tasks;
 
 namespace Student
 {
-    class Students
+    class Student
     {
         public string name;
         public string surname;
         public int course;
         public string faculty;
 
-         public Students()
+         public Student()
         {
             name = "Assem";
             surname = "Dosniyaz";
             course = 1;
             faculty = "FIT";
+        }
+        public Student(string n, string sn, int c)
+        {
+            name = n;
+            surname = sn;
+            course = c;
+           faculty = "FIT";
         }
         public override string ToString()
         {
@@ -32,12 +39,10 @@ namespace Student
     {
         static void Main(string[] args)
         {
-            Students S = new Students();
-            Console.WriteLine(S);
-            Students k = new Students();
-            k.name = "Assema";
-            k.course = 2;
-            Console.WriteLine(k);
+          
+            Student s = new Student("Asem", "DoSniyaz", 1);
+            Console.WriteLine(s);
+
 
             Console.ReadKey();
 
