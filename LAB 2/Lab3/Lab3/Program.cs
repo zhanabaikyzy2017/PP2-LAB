@@ -20,7 +20,7 @@ namespace Lab3
             {
                 asd = true;
             }
-            for(int i = 2; i >= Math.Sqrt(a); i++)
+            for(int i = 2; i <= Math.Sqrt(a); i++)
             {
                 if (a % i == 0)
                 {
@@ -36,35 +36,45 @@ namespace Lab3
             FileStream fr = new FileStream(@"C:\Users\HP\Documents\asd.txt",FileMode.Open , FileAccess.Read);
             StreamReader sr = new StreamReader(fr);
             string s = sr.ReadLine();
+            
             string[] ss;
             ss = s.Split(' ');
-            
-            int[] a = new int [ss.Length];
+
+            var a = new List<int>();
             for(int j = 0; j < ss.Length; j++)
             {
                 if(IsPrime(int.Parse(ss[j])) == true)
-                {
-                   a[j] = int.Parse(ss[j]);
-    
-                }
+                a.Add(int.Parse(ss[j]));
+
+
             }
-            int m = a[0];
-            for(int i = 0; i <= a.Length; i++)
+            for(int i = 0; i < a.Count; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+            
+           /* int m = a[0];
+            for(int i = 0; i < a.Count; i++)
             {
                 if(a[i] <= m)
                 {
                     m = a[i];
                 }
             }
+
+            Console.WriteLine(m);
+            Console.ReadKey();*/
+            
             sr.Close();
             fr.Close();
 
 
-             FileStream fs = new FileStream(@"C:\Users\HP\Documents\asd.txt", FileMode.Open, FileAccess.Write);
+            /* FileStream fs = new FileStream(@"C:\Users\HP\Documents\asd.txt", FileMode.Open, FileAccess.Write);
             StreamWriter ds = new StreamWriter(fs);
             ds.WriteLine(m);
             ds.Close();
             fs.Close();
+            */
 
             
         }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{02A372BB-70EE-4E89-BBA5-6E90B7D6AAFF}</ProjectGuid>
+    <ProjectGuid>{5780E851-1F89-4A92-9FF5-B74E57517FA9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Complexlab</RootNamespace>
-    <AssemblyName>Complexlab</AssemblyName>
+    <RootNamespace>gcd</RootNamespace>
+    <AssemblyName>gcd</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Complex.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

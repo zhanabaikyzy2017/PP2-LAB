@@ -1,0 +1,7 @@
+D:\Desktop\PP2\gcd\gcd\obj\Debug\gcd.csprojResolveAssemblyReference.cache
+D:\Desktop\PP2\gcd\gcd\obj\Debug\gcd.csproj.CoreCompileInputs.cache
+D:\Desktop\PP2\gcd\gcd\bin\Debug\gcd.exe.config
+D:\Desktop\PP2\gcd\gcd\bin\Debug\gcd.exe
+D:\Desktop\PP2\gcd\gcd\bin\Debug\gcd.pdb
+D:\Desktop\PP2\gcd\gcd\obj\Debug\gcd.exe
+D:\Desktop\PP2\gcd\gcd\obj\Debug\gcd.pdb

@@ -1,7 +1,0 @@
-C:\Users\HP\Desktop\PP2-LAB\Complexlab\Complexlab\bin\Debug\Complexlab.exe.config
-C:\Users\HP\Desktop\PP2-LAB\Complexlab\Complexlab\bin\Debug\Complexlab.exe
-C:\Users\HP\Desktop\PP2-LAB\Complexlab\Complexlab\bin\Debug\Complexlab.pdb
-C:\Users\HP\Desktop\PP2-LAB\Complexlab\Complexlab\obj\Debug\Complexlab.csprojResolveAssemblyReference.cache
-C:\Users\HP\Desktop\PP2-LAB\Complexlab\Complexlab\obj\Debug\Complexlab.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\PP2-LAB\Complexlab\Complexlab\obj\Debug\Complexlab.exe
-C:\Users\HP\Desktop\PP2-LAB\Complexlab\Complexlab\obj\Debug\Complexlab.pdb
