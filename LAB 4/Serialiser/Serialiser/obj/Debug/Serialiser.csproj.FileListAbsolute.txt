@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\PP2-LAB\LAB 4\Serialiser\Serialiser\bin\Debug\Serialiser.exe.config
+C:\Users\HP\Desktop\PP2-LAB\LAB 4\Serialiser\Serialiser\bin\Debug\Serialiser.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 4\Serialiser\Serialiser\bin\Debug\Serialiser.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 4\Serialiser\Serialiser\obj\Debug\Serialiser.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 4\Serialiser\Serialiser\obj\Debug\Serialiser.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 4\Serialiser\Serialiser\obj\Debug\Serialiser.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 4\Serialiser\Serialiser\obj\Debug\Serialiser.pdb

@@ -5,3 +5,10 @@ D:\Desktop\PP2\Farmanager\Farmanager\bin\Debug\Farmanager.exe
 D:\Desktop\PP2\Farmanager\Farmanager\bin\Debug\Farmanager.pdb
 D:\Desktop\PP2\Farmanager\Farmanager\obj\Debug\Farmanager.exe
 D:\Desktop\PP2\Farmanager\Farmanager\obj\Debug\Farmanager.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 3\Farmanager\Farmanager\bin\Debug\Farmanager.exe.config
+C:\Users\HP\Desktop\PP2-LAB\LAB 3\Farmanager\Farmanager\bin\Debug\Farmanager.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 3\Farmanager\Farmanager\bin\Debug\Farmanager.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 3\Farmanager\Farmanager\obj\Debug\Farmanager.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 3\Farmanager\Farmanager\obj\Debug\Farmanager.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 3\Farmanager\Farmanager\obj\Debug\Farmanager.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 3\Farmanager\Farmanager\obj\Debug\Farmanager.pdb

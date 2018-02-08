@@ -19,22 +19,19 @@ namespace gcd
         }
         public static int GCD(int n, int m)
         {
-            int remainder;
-            while(m != 0)
-            {
-                remainder = m % n;
-                n = m;
-                m = remainder;
 
-            }
-            return n;
+            if (m == 0)
+                return n;
+            else
+                return GCD(m, n % m);
         }
 
         public static int LCM(int n, int m)
         {
-            return n * m/ GCD(m, n); 
+            return n * m / GCD(n, m ); 
 
         }
+
         public override string ToString()
         {
             return x + "/" + y;
@@ -56,7 +53,7 @@ namespace gcd
                     _b = _b % _a;
                 }
             }
-           
+
                 int k = _a + _b;
                 x /= k;
                 y /= k;
@@ -67,7 +64,8 @@ namespace gcd
         {
             int lcm = LCM(a.y, b.y);
 
-            Complex c = new Complex(a.x * (lcm / b.y) + b.x * (lcm / a.y), lcm);
+            Complex c = new Complex(a.x * (lcm / a.y) + b.x * (lcm / b.y), lcm);
+
             c.Simplify();
             return c;
         }

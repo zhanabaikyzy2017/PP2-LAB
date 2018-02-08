@@ -5,3 +5,10 @@ D:\Desktop\PP2\gcd\gcd\bin\Debug\gcd.exe
 D:\Desktop\PP2\gcd\gcd\bin\Debug\gcd.pdb
 D:\Desktop\PP2\gcd\gcd\obj\Debug\gcd.exe
 D:\Desktop\PP2\gcd\gcd\obj\Debug\gcd.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 2\Complex\gcd\bin\Debug\gcd.exe.config
+C:\Users\HP\Desktop\PP2-LAB\LAB 2\Complex\gcd\bin\Debug\gcd.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 2\Complex\gcd\bin\Debug\gcd.pdb
+C:\Users\HP\Desktop\PP2-LAB\LAB 2\Complex\gcd\obj\Debug\gcd.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 2\Complex\gcd\obj\Debug\gcd.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\LAB 2\Complex\gcd\obj\Debug\gcd.exe
+C:\Users\HP\Desktop\PP2-LAB\LAB 2\Complex\gcd\obj\Debug\gcd.pdb
