@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+
 
 namespace Snake
 {
@@ -11,38 +12,38 @@ namespace Snake
     {
         char sign;
         public List<Point> body;
-        public ConsoleColor color;
+        ConsoleColor color;
+       
 
         public Wall(int level)
         {
             sign = '#';
-            color = ConsoleColor.Blue;
-           body = new List<Point>();
+            body = new List<Point>();
+            color = ConsoleColor.Yellow;
+            
             LoadLevel(level);
 
         }
-        public void LoadLevel(int level)
+        public void LoadLevel( int level)
         {
-            string fileName = string.Format(@"Levels\level{0}.txt", level);
+            string fileName = string.Format(@"Levels\level{0}.txt", level );
             FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader sr = new StreamReader(fs);
 
             int row = 0;
             string line = "";
-            while(row < 30)
+            while (row < 20)
             {
                 line = sr.ReadLine();
-                for(int col = 0; col < line.Length; col++)
+                for (int col = 0; col < line.Length; col++)
                 {
                     if (line[col] == '*')
-                    {
                         body.Add(new Point(col, row));
-                    }
-                    
                 }
                 row++;
             }
         }
+
         public void Draw()
         {
             Console.ForegroundColor = color;
@@ -50,6 +51,7 @@ namespace Snake
             {
                 Console.SetCursorPosition(p.x, p.y);
                 Console.Write(sign);
+
             }
         }
     }

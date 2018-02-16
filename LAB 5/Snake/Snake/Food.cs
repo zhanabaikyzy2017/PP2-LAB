@@ -9,43 +9,42 @@ namespace Snake
     class Food
     {
         char sign;
-        public Point location;
+        public Point loc;
         ConsoleColor color;
-
+         
         public Food()
         {
             sign = '@';
             color = ConsoleColor.White;
-            location = new Point(20, 10);
+            loc = new Point(20, 10);
         }
         public void SetPosition(Wall wall)
         {
             int x = new Random().Next(0, 120);
             int y = new Random().Next(0, 30);
-            bool ok = false; 
-            for(int i = 0; i < wall.body.Count; i++)
+            
+            bool ok = false;
+            for (int i = 0; i < wall.body.Count; i++)
             {
                 if (wall.body[i].x == x && wall.body[i].y == y)
                     ok = true;
             }
             if (ok == false)
             {
-                location.x = x;
-                location.y = y;
+                loc.x = x;
+                loc.y = y;
             }
             else
             {
-                SetPosition(wall);
+                SetPosition (wall);
             }
-               
             
-
-          
         }
+
         public void Draw()
         {
             Console.ForegroundColor = color;
-            Console.SetCursorPosition(location.x, location.y);
+            Console.SetCursorPosition(loc.x, loc.y);
             Console.Write(sign);
         }
     }

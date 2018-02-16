@@ -12,19 +12,20 @@ namespace Snake
         {
             Console.CursorVisible = false;
             Console.SetWindowSize(120, 30);
-            int level = 1;
+            int lev = 1;
+            int counter = 0;
             Snake snake = new Snake();
             Food food = new Food();
-            Wall wall = new Wall(level);
-            
+            Wall wall = new Wall(lev);
 
             while (true)
             {
-                Console.Clear();
-                snake.Draw();
-                food.Draw();
-                wall.Draw();
+                Console.SetCursorPosition(0, 0);
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.BackgroundColor = ConsoleColor.White;
+                Console.BackgroundColor = ConsoleColor.Black;
 
+                Console.Write(counter + snake.cnt);
                 ConsoleKeyInfo btn = Console.ReadKey();
                 switch (btn.Key)
                 {
@@ -41,6 +42,7 @@ namespace Snake
                         snake.Move(1, 0);
                         break;
                 }
+
                 if (snake.body[0].x > 119)
                 {
                     snake.body[0].x = 0;
@@ -53,45 +55,48 @@ namespace Snake
                 {
                     snake.body[0].y = 0;
                 }
-                if(snake.body[0].y < 0)
+                if (snake.body[0].y < 0)
                 {
                     snake.body[0].y = 29;
                 }
-             
 
                 if (snake.Eat(food))
                 {
-                       food.SetPosition(wall);
+                    food.SetPosition(wall);
                 }
-                if(snake.ColisionWithWall(wall) == true || snake.Colision() == true)
+                if(snake.cnt == lev*2)
                 {
-                    Console.Clear();
-                    Console.SetCursorPosition(60, 15);
-                    Console.WriteLine("Game Over!/n Press any key to restart");
-                    Console.ReadKey();
-                    snake = new Snake();
-                    level = 1;
-                    wall = new Wall(level);
-                }
-                if(snake.cnt == 2)
-                {
-                    level++;
-                    wall = new Wall(level);
-                    snake.ColisionWithWall(wall);
+                    lev++;
+                    wall = new Wall(lev);
+                    counter += snake.cnt;
                     snake.cnt = 0;
-                    Console.Clear();
-                    Console.SetCursorPosition(50, 15);
-                    Console.WriteLine("Good job! /n Press ane key to pass to the next level");
+                    Console.SetCursorPosition(20,20);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("GOOD JOB! " +
+                        "PRESS ANY KEY TO PASS TO THE NEXT LEVEL");
                     Console.ReadKey();
-
+                    Console.Clear();
                 }
-               
+
+                if(snake.Colision() == true || snake.ColisionWithWall(wall) == true)
+                {
+                    Console.Clear();
+                    Console.SetCursorPosition(15, 15);
+                    Console.WriteLine("GAME OVER!" +
+                        " PRESS ANY KEY TPO RESTART");
+                    Console.ReadKey();
+                    Console.Clear();
+
+                    snake = new Snake();
+                    lev = 1;
+                    wall = new Wall(lev);
+                }
                 snake.Draw();
+                food.Draw();
                 wall.Draw();
-               
+                //Console.Clear();
 
-            }
-
+            }  
         }
     }
 }

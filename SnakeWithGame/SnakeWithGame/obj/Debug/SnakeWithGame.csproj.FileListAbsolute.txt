@@ -1,0 +1,7 @@
+D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\bin\Debug\SnakeWithGame.exe.config
+D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\bin\Debug\SnakeWithGame.exe
+D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\bin\Debug\SnakeWithGame.pdb
+D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.csproj.CoreCompileInputs.cache
+D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.exe
+D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.pdb
+D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.csprojResolveAssemblyReference.cache

@@ -8,8 +8,8 @@ namespace Snake
 {
     class Point
     {
-       public  int x, y;
-        public Point(int _x, int _y)
+        public int x, y;
+        public Point(int _x , int _y)
         {
             x = _x;
             y = _y;

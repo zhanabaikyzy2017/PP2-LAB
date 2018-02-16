@@ -9,18 +9,16 @@ namespace Farmanager
 {
     class Program
     {
-        static void Show (DirectoryInfo cur, int pos ,int cnt)
+        static void Show (DirectoryInfo cur, int pos)
         {
             Console.BackgroundColor = ConsoleColor.Black;
             Console.Clear();
             Console.CursorVisible = false;
-            int k = cur.GetFileSystemInfos().Length;
-
             FileSystemInfo[] data = cur.GetFileSystemInfos();
-            
-            for(int i = 0; i < data.Length; i++)
+            int start = Console.WindowHeight * (pos / Console.WindowHeight);
+
+            for (int i = start; i < Math.Min(data.Length, start + Console.WindowHeight - 1); i++)
             {
-              
                 if (i == pos)
                 {
                     Console.BackgroundColor = ConsoleColor.White;
@@ -38,15 +36,7 @@ namespace Farmanager
                     Console.ForegroundColor = ConsoleColor.Red;
 
                 Console.WriteLine(data[i]);
-                cnt++;
-                if (cnt == 20)
-                {
-                    break;
-                }
-
-               
             }
-
 
         }
         static void Main(string[] args)
@@ -55,31 +45,26 @@ namespace Farmanager
             int pos = 0;
             int cnt = 0;
             int k = dir.GetFileSystemInfos().Length;
-            
+         
             while (true)
             {
                 
-                Show(dir, pos , cnt);
+                Show(dir, pos);
                 ConsoleKeyInfo btn = Console.ReadKey();
          
                 switch (btn.Key)
                 {
                     case ConsoleKey.UpArrow:
+                        
                         pos--;
-                        if(k != cnt && k == cnt)
-                        {
-                            if(pos == -1)
-                        {
-                            pos = k - 1;
-                        }
+                        if(pos < 0 )
+                            pos = dir.GetFileSystemInfos().Length - 1;
                        
-                        }
                         break;
 
                     case ConsoleKey.DownArrow:
                         pos++;
-
-                        if (pos == k || pos == cnt )
+                        if (pos > dir.GetFileSystemInfos().Length -1  )
                         {
                             pos = 0;
                         }
@@ -118,13 +103,8 @@ namespace Farmanager
                         
                         Console.BackgroundColor = ConsoleColor.Black;
                         break;
-
-
-                     
-
-
                 }
-                Console.Clear();
+                //Console.Clear();
             }
 
         }

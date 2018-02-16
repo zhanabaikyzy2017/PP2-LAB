@@ -10,14 +10,13 @@ namespace Serialiser
 {
     class Program
     {
-        static void f1(Complex c)
+        static void f1(Complex c3)
         {
-            FileStream fs = new FileStream(@"data.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            FileStream fs = new FileStream(@"data.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
             XmlSerializer xm = new XmlSerializer(typeof(Complex));
-
             try
             {
-                xm.Serialize(fs, c);
+                xm.Serialize(fs,c3);
             }
             catch(Exception e)
             {
@@ -27,8 +26,29 @@ namespace Serialiser
             {
                 fs.Close();
             }
-            Console.WriteLine("5");
+            Console.WriteLine("DONE");
             Console.ReadKey();
+        }
+        static void f2()
+        {
+            FileStream fs = new FileStream(@"data.xml", FileMode.Open, FileAccess.Read);
+            XmlSerializer xm = new XmlSerializer(typeof(Complex));
+            try
+            {
+                Complex c = xm.Deserialize(fs) as Complex;
+                Console.WriteLine(c);
+                Console.WriteLine("Done");
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                fs.Close();
+            }
+            
         }
         static void Main(string[] args)
         {
@@ -41,6 +61,7 @@ namespace Serialiser
             int b = int.Parse(n1[1]);
             int c = int.Parse(n2[0]);
             int d = int.Parse(n2[1]);
+            
 
 
             Complex c1 = new Complex(a, b);
@@ -50,7 +71,11 @@ namespace Serialiser
             c2.Simplify();
 
             Complex c3 = c1 + c2;
+            Complex c4 = new Complex();
             f1(c3);
+            
+            f2();
+            Console.ReadKey();
         }
     }
 }
