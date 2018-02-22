@@ -5,3 +5,10 @@ D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.csproj.CoreCo
 D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.exe
 D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.pdb
 D:\Desktop\PP2\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGame\SnakeWithGame\bin\Debug\SnakeWithGame.exe.config
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGame\SnakeWithGame\bin\Debug\SnakeWithGame.exe
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGame\SnakeWithGame\bin\Debug\SnakeWithGame.pdb
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.exe
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGame\SnakeWithGame\obj\Debug\SnakeWithGame.pdb

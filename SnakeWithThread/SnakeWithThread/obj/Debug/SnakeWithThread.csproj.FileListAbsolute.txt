@@ -1,0 +1,7 @@
+D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.csproj.CoreCompileInputs.cache
+D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\bin\Debug\SnakeWithThread.exe.config
+D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\bin\Debug\SnakeWithThread.exe
+D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\bin\Debug\SnakeWithThread.pdb
+D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.exe
+D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.pdb
+D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.csprojResolveAssemblyReference.cache

@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
-namespace SnakeWithGame
+namespace SnakeWithGameAndSerialization
 {
-    class Food
+    [Serializable]
+    public class Food
     {
-        char sign;
+        public char sign;
         public Point loc;
-        ConsoleColor color;
+        public ConsoleColor color;
 
         public Food()
         {
@@ -37,7 +40,7 @@ namespace SnakeWithGame
             else
             {
                 //while(ok != true)
-                    SetPosition(wall);
+                SetPosition(wall);
             }
 
         }
@@ -47,6 +50,23 @@ namespace SnakeWithGame
             Console.ForegroundColor = color;
             Console.SetCursorPosition(loc.x, loc.y);
             Console.Write(sign);
+        }
+        public void Serialize()
+        {
+            FileStream fs = new FileStream("data3.xml", FileMode.OpenOrCreate, FileAccess.Write);
+            XmlSerializer xm = new XmlSerializer(typeof(Food));
+            xm.Serialize(fs, Game.food);
+            fs.Close();
+
+        }
+        public void Deserialize()
+        {
+            FileStream fs = new FileStream("data3.xml", FileMode.Open, FileAccess.Read);
+            XmlSerializer xm = new XmlSerializer(typeof(Food));
+            Food s = new Food();
+            s = xm.Deserialize(fs) as Food;
+            fs.Close();
+
         }
     }
 }

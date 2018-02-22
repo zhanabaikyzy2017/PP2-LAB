@@ -2,28 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
-namespace SnakeWithGame
+namespace SnakeWithGameAndSerialization
 {
     class Program
     {
-        
-       
         static void Main(string[] args)
         {
-            int counter = 0;
+           
             Game.Init();
-            
+
 
             while (!Game.GameOver)
             {
                 Console.SetCursorPosition(0, 0);
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.BackgroundColor = ConsoleColor.Black;
-               
-                Console.Write(counter + Game.snake.cnt);
+
+                Console.Write(Game.counter);
 
                 ConsoleKeyInfo btn = Console.ReadKey();
                 switch (btn.Key)
@@ -40,18 +37,24 @@ namespace SnakeWithGame
                     case ConsoleKey.RightArrow:
                         Game.snake.Move(1, 0);
                         break;
+                    case ConsoleKey.F1:
+                        Game.Serialize();
+                        Console.Clear();
+                        break;
+                    case ConsoleKey.F2:
+                        Game.Desialize();
+                        break;
+
                 }
 
                 if (Game.snake.Eat(Game.food))
                 {
                     Game.food.SetPosition(Game.wall);
                 }
-                if (Game.snake.cnt == Game.level * 2)
+                if (Game.counter == Game.level * 2)
                 {
                     Game.level++;
                     Game.wall = new Wall();
-                    counter += Game.snake.cnt;
-                    Game.snake.cnt = 0;
                     Console.Clear();
                     Console.SetCursorPosition(20, 20);
                     Console.ForegroundColor = ConsoleColor.White;
@@ -64,35 +67,31 @@ namespace SnakeWithGame
                 if (Game.snake.Colision() == true || Game.snake.ColisionWithWall(Game.wall) == true)
                 {
                     Game.GameOver = true;
-                    Console.ReadKey();
-                    /*Console.Clear();
+                    //Console.ReadKey();
+                    Console.Clear();
                     Console.SetCursorPosition(15, 15);
-                    Console.WriteLine("GAME OVER!" +
-                        " PRESS ANY KEY TO RESTART");
-
-                    Game.snake.cnt = 0;
-                    counter = 0;
+                    Console.WriteLine("GAME OVER!");
+                    Game.counter = 0;
                     Console.ReadKey();
                     Console.Clear();
-                    */
+                    
                     Game.snake = new Snake();
                     Game.level = 1;
                     Game.wall = new Wall();
                 }
-                if(counter + Game.snake.cnt % 5 == 0)
+                /*if (counter + Game.snake.cnt % 5 == 0)
                 {
                     if (Game.speed > 0)
                     {
                         Game.speed -= 10;
 
                     }
-                }
+                }*/
 
-               Game.Draw();
+                Game.Draw();
                 //Console.Clear();
 
             }
         }
     }
-    
 }

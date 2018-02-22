@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGameAndSerialization\SnakeWithGameAndSerialization\obj\Debug\SnakeWithGameAndSerialization.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGameAndSerialization\SnakeWithGameAndSerialization\obj\Debug\SnakeWithGameAndSerialization.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGameAndSerialization\SnakeWithGameAndSerialization\bin\Debug\SnakeWithGameAndSerialization.exe.config
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGameAndSerialization\SnakeWithGameAndSerialization\bin\Debug\SnakeWithGameAndSerialization.exe
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGameAndSerialization\SnakeWithGameAndSerialization\bin\Debug\SnakeWithGameAndSerialization.pdb
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGameAndSerialization\SnakeWithGameAndSerialization\obj\Debug\SnakeWithGameAndSerialization.exe
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithGameAndSerialization\SnakeWithGameAndSerialization\obj\Debug\SnakeWithGameAndSerialization.pdb
