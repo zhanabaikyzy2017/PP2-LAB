@@ -19,7 +19,7 @@ namespace SnakeWithThread
             sign = '#';
             body = new List<Point>();
             color = ConsoleColor.Yellow;
-
+            
         }
         public Wall(int level)
         {
@@ -62,32 +62,41 @@ namespace SnakeWithThread
         }
         public void Serialize()
         {
-            FileStream fs = new FileStream("data2.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            FileStream fs = new FileStream("data2.xml", FileMode.Create, FileAccess.ReadWrite);
             XmlSerializer s = new XmlSerializer(typeof(Wall));
-            
-                s.Serialize(fs, Game.wall);
-               
+            try
+            {
+                s.Serialize(fs, this);
+
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            finally
+            {
                 fs.Close();
+
+            }
 
         }
         public void Deserialize()
         {
-            FileStream f = new FileStream("data2.xml",FileMode.Open, FileAccess.ReadWrite);
+            FileStream fs = new FileStream("data2.xml", FileMode.Open, FileAccess.Read);
             XmlSerializer ss = new XmlSerializer(typeof(Wall));
             try
             {
-                Wall s = ss.Deserialize(f) as Wall;
-                Game.wall = s;
+                Game.wall = ss.Deserialize(fs) as Wall;
 
             }
-            catch (Exception e)
+            catch(Exception e)
             {
-                Console.WriteLine(" ");
+                Console.WriteLine(e);
+
             }
             finally
             {
-                f.Close();
-
+                fs.Close();
             }
 
         }

@@ -20,12 +20,9 @@ namespace SnakeWithThread
         {
             sign = 'o' ;
             body = new List<Point>();
-            body.Add(new Point(12, 10));
-            body.Add(new Point(11, 10));
-            body.Add(new Point(10, 10));
             color = ConsoleColor.Green;
         }
-
+       
         public void Draw()
         {
             for (int i = 0; i < body.Count; i++)
@@ -43,12 +40,16 @@ namespace SnakeWithThread
 
         public void Move(int dx, int dy)
         {
+            Console.SetCursorPosition(0, 0);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Score:" + Game.counter);
+            Console.SetCursorPosition(10, 0);
+            Console.WriteLine("Level:" + Game.level);
+            Console.SetCursorPosition(20, 0);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Press F1 to pause the game");
             Console.SetCursorPosition(body[body.Count - 1].x, body[body.Count - 1].y);
             Console.Write(' ');
-           /* Console.SetCursorPosition(body[0].x, body[0].y);
-            Console.ForegroundColor = color;
-            Console.Write(sign);
-            */
             for (int i = body.Count - 1; i > 0; i--)
             {
                 body[i].x = body[i - 1].x;
@@ -69,72 +70,63 @@ namespace SnakeWithThread
             }
             if (body[0].y > 29)
             {
-               body[0].y = 0;
+               body[0].y = 1;
             }
-            if (body[0].y < 0)
+            if (body[0].y < 1)
             {
                 body[0].y = 29;
             }
-
-            if (Eat(Game.food))
+            
+            if (Eat())
             {
-                Game.food.SetPosition(Game.wall);
+                Game.food.SetPosition();
             }
-
+            
             if (Game.snake.Colision() == true || Game.snake.ColisionWithWall(Game.wall) == true)
             {
                 Console.Clear();
-                 Console.SetCursorPosition(15, 15);
+                 Console.SetCursorPosition(50, 10);
                 Console.WriteLine("GAME OVER!" +
                     " PRESS ANY KEY TO RESTART");
                 Console.ReadKey();
                 Console.Clear();
+                Game.Init();
                 
-                Game.snake = new Snake();
-                Game.level = 1;
-                Game.wall = new Wall(Game.level);
-                Game.wall.Draw();
-                Game.counter = 0;
                 
             }
+
             if (Game.counter == Game.level * 2 )
             {
+              
+                Console.Clear();
+                Console.SetCursorPosition(50, 10);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Good job, press ENTER to pass to the next level");
+                Console.ReadKey();
                 Game.level++;
                 Game.speed -= 50;
                 Game.wall = new Wall(Game.level);
-               
-                Console.Clear();
-                Console.SetCursorPosition(20, 20);
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("GOOD JOB! " +
-                    "PRESS ANY KEY TO PASS TO THE NEXT LEVEL");
-                Console.ReadKey();
                 Console.Clear();
 
             }
-           
-            //Console.Clear();
         }
-         bool Eat(Food food)
+
+        bool Eat()
         {
-            if (body[0].x == Game.food.loc.x && body[0].y == food.loc.y)
+            if (body[0].x == Game.food.loc.x && body[0].y == Game.food.loc.y)
             {
                 body.Add(new Point(body[body.Count - 1].x, body[body.Count - 1].y));
-
                 Game.counter++;
-
                 return true;
             }
             return false;
         }
-
         bool ColisionWithWall(Wall w)
         {
             foreach (Point p in w.body)
             {
                 if (p.x == body[0].x && p.y == body[0].y)
                     return true;
-
             }
             return false;
         }
@@ -144,40 +136,47 @@ namespace SnakeWithThread
             {
                 if (body[0].x == body[i].x && body[0].y == body[i].y)
                     return true;
-
             }
             return false;
         }
+
         public void Serialize()
         {
-            FileStream fs = new FileStream("data.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            FileStream fs = new FileStream("data.xml", FileMode.Create, FileAccess.Write);
             XmlSerializer s = new XmlSerializer(typeof(Snake));
-            
-                s.Serialize(fs, Game.snake);
-                
-            
-                fs.Close();
-                
-            
-        }
-        public void Deserialize()
-        {
-            FileStream f = new FileStream("data.xml", FileMode.Open, FileAccess.ReadWrite);
-            XmlSerializer ss = new XmlSerializer(typeof(Snake));
             try
             {
-                Snake s = ss.Deserialize(f) as Snake;
-                Game.snake = s;
+                s.Serialize(fs, this);
+
             }
             catch(Exception e)
             {
-                Console.WriteLine(" ");
+                Console.WriteLine(e);
+            }
+            finally
+            {
+                fs.Close();
+            }
+
+        }
+        public void Deserialize()
+        {
+            FileStream f = new FileStream("data.xml", FileMode.Open, FileAccess.Read);
+            XmlSerializer ss = new XmlSerializer(typeof(Snake));
+            try
+            {
+                Game.snake = ss.Deserialize(f) as Snake; 
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
             }
             finally
             {
                 f.Close();
             }
-            
+
         }
     }
 }

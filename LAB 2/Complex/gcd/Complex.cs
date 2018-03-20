@@ -53,19 +53,15 @@ namespace gcd
                     _b = _b % _a;
                 }
             }
-
                 int k = _a + _b;
                 x /= k;
                 y /= k;
 
-             
         }
         public static Complex operator + (Complex a, Complex b)
         {
             int lcm = LCM(a.y, b.y);
-
             Complex c = new Complex(a.x * (lcm / a.y) + b.x * (lcm / b.y), lcm);
-
             c.Simplify();
             return c;
         }

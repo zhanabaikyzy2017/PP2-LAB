@@ -26,18 +26,25 @@ namespace SnakeWithThread
             wall = new Wall(level);
             Console.CursorVisible = false;
             Console.SetWindowSize(120, 30);
-            direction = 1;
+            direction = 4;
             counter = 0;
+            Console.BackgroundColor = ConsoleColor.Black;
+            snake.body.Add(new Point(12, 10));
+            snake.body.Add(new Point(11, 10));
+            snake.body.Add(new Point(10, 10));
+          
         }
+        
         public static void Draw()
         {
+            
             snake.Draw();
             food.Draw();
             wall.Draw();
         }
         public static void Serialize()
         {
-            snake.Serialize();
+           snake.Serialize();
             food.Serialize();
             wall.Serialize();
             
@@ -47,6 +54,7 @@ namespace SnakeWithThread
             snake.Deserialize();
             food.Deserialize();
             wall.Deserialize();
+            Draw();
             
         } 
     }

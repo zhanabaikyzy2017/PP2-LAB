@@ -20,17 +20,26 @@ namespace SnakeWithThread
             color = ConsoleColor.White;
             loc = new Point(20, 10);
         }
-         public void SetPosition(Wall wall)
+         public void SetPosition()
         {
             int x = new Random().Next(0, 120);
-            int y = new Random().Next(0, 30);
+            int y = new Random().Next(1, 30);
 
             bool ok = false;
-            for (int i = 0; i < wall.body.Count; i++)
+            for (int i = 0; i < Game.wall.body.Count; i++)
             {
-                if (wall.body[i].x == x && wall.body[i].y == y)
+                if (Game.wall.body[i].x == x && Game.wall.body[i].y == y)
+
                     ok = true;
             }
+            for(int i = 0; i < Game.snake.body.Count; i++)
+            {
+                if(x == Game.snake.body[i].x && y == Game.snake.body[i].y)
+                {
+                    ok = true;
+                }
+            }
+
             if (ok == false)
             {
                 loc.x = x;
@@ -38,7 +47,7 @@ namespace SnakeWithThread
             }
             else
             {
-                SetPosition(wall);
+                SetPosition();
             }
 
         }
@@ -51,29 +60,39 @@ namespace SnakeWithThread
         }
         public void Serialize()
         {
-            FileStream fs = new FileStream("data3.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            FileStream fs = new FileStream("data3.xml", FileMode.Create, FileAccess.ReadWrite);
             XmlSerializer s = new XmlSerializer(typeof(Food));
-           
-                s.Serialize(fs, Game.food);
-                Console.Clear();
+            try
+            {
+                s.Serialize(fs, this);
+                
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                
+            }
+            finally
+            {
                 fs.Close();
 
-            
+            }
         }
         public void Deserialize()
         {
-            FileStream f = new FileStream("data3.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            FileStream f = new FileStream("data3.xml", FileMode.Open, FileAccess.ReadWrite);
             XmlSerializer ss = new XmlSerializer(typeof(Food));
             try
             {
-                Food s = ss.Deserialize(f) as Food;
-                Game.food = s;
-
+               Game.food = ss.Deserialize(f) as Food;
             }
-            catch
+            catch(Exception e)
             {
-                Console.WriteLine(" ");
+                Console.WriteLine(e);
+                
             }
+
             finally
             {
                f.Close();

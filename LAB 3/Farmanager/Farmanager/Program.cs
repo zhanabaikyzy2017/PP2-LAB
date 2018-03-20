@@ -43,7 +43,7 @@ namespace Farmanager
         {
             DirectoryInfo dir = new DirectoryInfo(@"C:\Users\HP\Documents\asem");
             int pos = 0;
-            int cnt = 0;
+            
             int k = dir.GetFileSystemInfos().Length;
          
             while (true)
@@ -81,27 +81,23 @@ namespace Farmanager
 
                         }
                         else{
+                            Console.Clear();
                             pos = 0;
+                            Console.BackgroundColor = ConsoleColor.Black;
+
                             FileStream ff = new FileStream(f.FullName, FileMode.Open, FileAccess.Read);
                             StreamReader d = new StreamReader(ff);
-                            Console.BackgroundColor = ConsoleColor.Black;
-
-                            Console.Clear();
-                            Console.BackgroundColor = ConsoleColor.Black;
                             string line = d.ReadToEnd();
-
                             Console.WriteLine(line);
                             Console.ReadKey();
                             d.Close();
                             ff.Close();
-
                         }
                         break;
 
                     case ConsoleKey.Escape:
-                        dir = dir.Parent;
-                        
                         Console.BackgroundColor = ConsoleColor.Black;
+                        dir = dir.Parent;
                         break;
                 }
                 //Console.Clear();

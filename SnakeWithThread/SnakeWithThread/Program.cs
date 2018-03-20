@@ -30,28 +30,34 @@ namespace SnakeWithThread
 
 
                 }
-              
-                Thread.Sleep(Game.speed);
                 Game.Draw();
+                Thread.Sleep(Game.speed);
+                
             }
         }
         static void Main(string[] args)
         {
-                
-            Game.Init();
             
             Thread t = new Thread(MoveSnake);
-            t.Start();
+            Console.WriteLine("If you want to start press Enter");
+            ConsoleKeyInfo k = Console.ReadKey();
+            if(k.Key == ConsoleKey.Enter)
+            {
+                Console.Clear();
+                Game.Init();
+
+                t.Start();
+
+            }
 
             while (true)
              {
-                Console.SetCursorPosition(0, 0);
-                Console.BackgroundColor = ConsoleColor.White;
-                Console.ForegroundColor = ConsoleColor.Blue;
+                /*Console.SetCursorPosition(0, 0);
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Score:" + Game.counter);
                 Console.SetCursorPosition(10, 0);
                 Console.WriteLine("Level:" + Game.level);
-                Console.BackgroundColor = ConsoleColor.Black;
+                */
                 ConsoleKeyInfo btn = Console.ReadKey();
                 switch (btn.Key)
                 {
@@ -68,25 +74,24 @@ namespace SnakeWithThread
                         Game.direction = 4;
                         break;
                     case ConsoleKey.F1:
-                        Game.Serialize();
                         t.Suspend();
+                        Game.Serialize();
                         Console.Clear();
-                        Console.SetCursorPosition(60, 10);
-                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.SetCursorPosition(50, 10);
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("PRESS F2 TO RESUME THE GAME");
-                        Console.ReadKey();
-                        Console.Clear();
                         break;
                     case ConsoleKey.F2:
+                        Console.Clear();
                         Game.Deserialize();
-                        t.Resume();  
+                        t.Resume();
                         break;
-                    case ConsoleKey.Escape:
-                        break;
+                   
                     
                         
                 }
-               
+
+                
                 /*if (Game.snake.Eat(Game.food))
                 {
                     Game.food.SetPosition(Game.wall);
@@ -125,8 +130,8 @@ namespace SnakeWithThread
 
                 //Game.Draw();
                 // Console.Clear();
-                
-                }
+
+            }
             }
         }
     }

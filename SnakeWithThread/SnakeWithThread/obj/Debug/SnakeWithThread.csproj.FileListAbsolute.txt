@@ -5,3 +5,10 @@ D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\bin\Debug\SnakeWithThread.pdb
 D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.exe
 D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.pdb
 D:\Desktop\PP2\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithThread\SnakeWithThread\bin\Debug\SnakeWithThread.exe.config
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithThread\SnakeWithThread\bin\Debug\SnakeWithThread.exe
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithThread\SnakeWithThread\bin\Debug\SnakeWithThread.pdb
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.exe
+C:\Users\HP\Desktop\PP2-LAB\SnakeWithThread\SnakeWithThread\obj\Debug\SnakeWithThread.pdb

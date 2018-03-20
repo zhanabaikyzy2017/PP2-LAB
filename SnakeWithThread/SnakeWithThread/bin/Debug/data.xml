@@ -3,28 +3,20 @@
   <sign>111</sign>
   <body>
     <Point>
-      <x>89</x>
-      <y>20</y>
+      <x>26</x>
+      <y>15</y>
     </Point>
     <Point>
-      <x>88</x>
-      <y>20</y>
+      <x>25</x>
+      <y>15</y>
     </Point>
     <Point>
-      <x>87</x>
-      <y>20</y>
+      <x>24</x>
+      <y>15</y>
     </Point>
     <Point>
-      <x>86</x>
-      <y>20</y>
-    </Point>
-    <Point>
-      <x>85</x>
-      <y>20</y>
-    </Point>
-    <Point>
-      <x>84</x>
-      <y>20</y>
+      <x>23</x>
+      <y>15</y>
     </Point>
   </body>
   <color>Green</color>

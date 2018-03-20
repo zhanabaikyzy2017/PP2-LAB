@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\PP2-LAB\MIDTERM\Midterm1\Midterm1\bin\Debug\Midterm1.exe.config
+C:\Users\HP\Desktop\PP2-LAB\MIDTERM\Midterm1\Midterm1\bin\Debug\Midterm1.exe
+C:\Users\HP\Desktop\PP2-LAB\MIDTERM\Midterm1\Midterm1\bin\Debug\Midterm1.pdb
+C:\Users\HP\Desktop\PP2-LAB\MIDTERM\Midterm1\Midterm1\obj\Debug\Midterm1.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\MIDTERM\Midterm1\Midterm1\obj\Debug\Midterm1.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\MIDTERM\Midterm1\Midterm1\obj\Debug\Midterm1.exe
+C:\Users\HP\Desktop\PP2-LAB\MIDTERM\Midterm1\Midterm1\obj\Debug\Midterm1.pdb
