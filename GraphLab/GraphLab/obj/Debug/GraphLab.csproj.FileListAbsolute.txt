@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\bin\Debug\GraphLab.exe.config
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\bin\Debug\GraphLab.exe
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\bin\Debug\GraphLab.pdb
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\obj\Debug\GraphLab.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\obj\Debug\GraphLab.Form1.resources
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\obj\Debug\GraphLab.Properties.Resources.resources
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\obj\Debug\GraphLab.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\obj\Debug\GraphLab.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\obj\Debug\GraphLab.exe
+C:\Users\HP\Desktop\PP2-LAB\GraphLab\GraphLab\obj\Debug\GraphLab.pdb

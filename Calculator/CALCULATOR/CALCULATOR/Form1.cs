@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace CALCULATOR
     public partial class Form1 : Form
     {
         CalcBase Calc = new CalcBase();
-        
+        bool asd = false;
         public Form1()
         {
             InitializeComponent();
@@ -22,13 +23,19 @@ namespace CALCULATOR
        
         private void Number_Click(object sender, EventArgs e)
         {
+
             Button btn = sender as Button;
-            if(Calc.ok == true)
+            /*if (asd)
             {
                 textBox1.Text = "";
-                Calc.ok = false;
+                asd = false;
             }
-           
+            */
+            if (Calc.ok == true && textBox1.Text != "0,")
+            {
+                textBox1.Text = "";
+            }
+
             if (textBox1.Text == "0")
             {
 
@@ -36,9 +43,7 @@ namespace CALCULATOR
             }
             
             textBox1.Text += btn.Text;
-
-            
-         
+            Calc.ok = false;
         }
         private void Operation_Click(object sender, EventArgs e)
         {
@@ -47,8 +52,11 @@ namespace CALCULATOR
             string s = textBox1.Text;
             Calc.first = double.Parse(s);
             Calc.second = double.Parse(s);
+            asd = true;
+           Calc.ok = true;
             Calc.operation = btn.Text;
-            textBox1.Text = "";
+           // textBox1.Text = "0";
+           
         }
 
         private void Result_Click(object sender, EventArgs e)
@@ -60,19 +68,23 @@ namespace CALCULATOR
               
                 Calc.operate();
                 textBox1.Text = Calc.result.ToString();
+                
             }
+             
             if (Calc.ok == false)
             {
-               if(textBox1.Text == "")
+                /*if(textBox1.Text == "")
                 {
                     Calc.second = Calc.first;
                 }
                 else
-                {
+                {*/
+                
                     Calc.second = double.Parse(textBox1.Text);
-                  //textBox1.Text = Calc.result.ToString();
-                    
-                }
+                    textBox1.Text = Calc.result.ToString();
+                //MessageBox.Show(Calc.second.ToString());
+//                }
+
                 Calc.operate();
                 textBox1.Text = Calc.result.ToString();
                 
@@ -122,17 +134,15 @@ namespace CALCULATOR
 
         private void buttonpoint_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text == null)
+            if(Calc.ok == true)
             {
-                textBox1.Text = "0";
+                textBox1.Text = "0,";
             }
             if (!textBox1.Text.Contains(","))
             {
                 textBox1.Text += ",";
-
             }
             
-
         }
         private void plusorminus_Click(object sender , EventArgs e)
         {
@@ -140,7 +150,6 @@ namespace CALCULATOR
             d = d * -1;
             textBox1.Text = d.ToString();
            
-          
         }
         private void Factorial_Click(object sender , EventArgs e)
         {
@@ -165,6 +174,11 @@ namespace CALCULATOR
             textBox1.Text = "0";
             Calc = new CalcBase();
             label1.Text = Calc.memory.ToString();
+            FileStream f = new FileStream(@"data.txt", FileMode.Open, FileAccess.Write);
+            StreamWriter s = new StreamWriter(f);
+            s.Write("0");
+            s.Close();
+            f.Close();
         }
 
         private void XinY(object sender, EventArgs e)
@@ -272,6 +286,11 @@ namespace CALCULATOR
         {
             Calc.memory = double.Parse(textBox1.Text);
             label1.Text = Calc.memory.ToString();
+            FileStream fs = new FileStream(@"data.txt", FileMode.Open, FileAccess.Write);
+            StreamWriter sr = new StreamWriter(fs);
+            sr.WriteLine(Calc.memory);
+            sr.Close();
+            fs.Close();
         }
         private void MPlus_Click(object sender, EventArgs e)
         {
@@ -288,11 +307,21 @@ namespace CALCULATOR
         {
             Calc.memory = 0;
             label1.Text = Calc.memory.ToString();
-            
+            FileStream fs = new FileStream(@"data.txt", FileMode.Open, FileAccess.Write);
+            StreamWriter sr = new StreamWriter(fs);
+            sr.WriteLine(0);
+
+
         }
         private void MRead_Click(object sender, EventArgs e)
         {
-            textBox1.Text = Calc.memory.ToString();
+            FileStream fss = new FileStream(@"data.txt", FileMode.Open, FileAccess.Read);
+            StreamReader srr = new StreamReader(fss);
+            string d = srr.ReadLine();
+            textBox1.Text = d;
+            srr.Close();
+            fss.Close();
+
         }
     }
 }

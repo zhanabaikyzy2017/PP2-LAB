@@ -47,16 +47,7 @@ namespace CALCULATOR
                     result = k;
                     ok = true;
                     break;
-                case "x^(1/y)":
-                    double d = 1 / second;
-                    double l = 1;
-                    for(double i = 0; i < d; i++)
-                    {
-                        l *= first;
-                    }
-                    ok = true;
-                    result = l;
-                    break;
+               
             }
         }
         public void calculate()

@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\bin\Debug\PAINT.exe.config
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\bin\Debug\PAINT.exe
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\bin\Debug\PAINT.pdb
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\obj\Debug\PAINT.Form1.resources
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\obj\Debug\PAINT.Properties.Resources.resources
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\obj\Debug\PAINT.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\obj\Debug\PAINT.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\obj\Debug\PAINT.exe
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\obj\Debug\PAINT.pdb
+C:\Users\HP\Desktop\PP2-LAB\PAINT\PAINT\obj\Debug\PAINT.csprojResolveAssemblyReference.cache
