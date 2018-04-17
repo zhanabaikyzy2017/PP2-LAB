@@ -46,6 +46,7 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -201,11 +202,22 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.Tools_clicked);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(495, 20);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(44, 23);
+            this.button9.TabIndex = 11;
+            this.button9.Text = "Fill";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Tools_clicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 401);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button7);
@@ -249,6 +261,7 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
 

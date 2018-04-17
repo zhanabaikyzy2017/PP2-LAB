@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace PAINT
 {
-    public enum Tools {Pencil,Line, Rectangle,Circle,Rtriangle,Itriangle,Eraser};
+    public enum Tools {Pencil,Line, Rectangle,Circle,Rtriangle,Itriangle,Eraser,Fill};
     public partial class Form1 : Form
     {
         Graphics g;
@@ -20,6 +20,8 @@ namespace PAINT
         Point prev;
         Bitmap btm;
         Tools t;
+        Queue<Point> q;
+        Color Color1, Color2;
 
 
         public Form1()
@@ -32,7 +34,7 @@ namespace PAINT
             g = Graphics.FromImage(btm);
             g.Clear(Color.White);
             pen = new Pen(Color.Yellow, 3);
-
+            q = new Queue<Point>();
             t = Tools.Pencil;
             numericUpDown1.Value = 2;
 
@@ -42,6 +44,38 @@ namespace PAINT
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             prev = e.Location;
+            if(t == Tools.Fill)
+            {
+                q.Enqueue(e.Location);
+                Color1 = btm.GetPixel(e.X, e.Y);
+                Color2 = button7.BackColor;
+                while (q.Count > 0)
+                {
+                    int x = q.First().X;
+                    int y = q.First().Y;
+                    Fill(x, y + 1);
+                    Fill(x, y - 1);
+                    Fill(x - 1, y);
+                    Fill(x + 1, y);
+                    q.Dequeue();
+
+                }
+            }
+        }
+        void Fill(int x, int y)
+        {
+            if (x >= btm.Width)
+                return;
+            if (x < 0)
+                return;
+            if (y >= btm.Height)
+                return;
+            if (y < 0)
+                return;
+            if (btm.GetPixel(x, y) != Color1)
+                return;
+            btm.SetPixel(x, y, Color2);
+            q.Enqueue(new Point(x, y));
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
@@ -145,6 +179,9 @@ namespace PAINT
                     break;
                 case "Eraser":
                     t = Tools.Eraser;
+                    break;
+                case "Fill":
+                    t = Tools.Fill;
                     break;
             }
         }

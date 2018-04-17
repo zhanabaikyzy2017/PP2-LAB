@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E9A73D1D-2B76-4C76-B501-863184E96982}</ProjectGuid>
+    <ProjectGuid>{B37DC8C2-4DE5-44E9-A5AA-B04B052F4EE3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>GraphLab</RootNamespace>
-    <AssemblyName>GraphLab</AssemblyName>
+    <RootNamespace>GraphicsExample</RootNamespace>
+    <AssemblyName>GraphicsExample</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,8 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Asteroid.cs" />
-    <Compile Include="BASE.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,8 +53,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spaceship.cs" />
-    <Compile Include="Star.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
