@@ -44,7 +44,7 @@ namespace PAINT
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             prev = e.Location;
-            if(t == Tools.Fill)
+            if(t == Tools.Fill && btm.GetPixel(e.X,e.Y).ToArgb() != button7.BackColor.ToArgb())
             {
                 q.Enqueue(e.Location);
                 Color1 = btm.GetPixel(e.X, e.Y);
@@ -60,6 +60,7 @@ namespace PAINT
                     q.Dequeue();
 
                 }
+                Refresh();
             }
         }
         void Fill(int x, int y)
@@ -74,6 +75,7 @@ namespace PAINT
                 return;
             if (btm.GetPixel(x, y) != Color1)
                 return;
+
             btm.SetPixel(x, y, Color2);
             q.Enqueue(new Point(x, y));
         }
