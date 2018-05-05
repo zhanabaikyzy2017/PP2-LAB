@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\2task\bin\Debug\2task.exe.config
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\2task\bin\Debug\2task.exe
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\2task\bin\Debug\2task.pdb
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\2task\obj\Debug\2task.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\2task\obj\Debug\2task.exe
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\2task\obj\Debug\2task.pdb
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\2task\obj\Debug\2task.csprojResolveAssemblyReference.cache

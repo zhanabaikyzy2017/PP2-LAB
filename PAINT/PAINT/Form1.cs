@@ -150,11 +150,11 @@ namespace PAINT
             }
         }
 
-        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+       private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawPath(pen, path);
         }
-
+        
         private void Tools_clicked(object sender, EventArgs e)
         {
             Button btn = sender as Button;

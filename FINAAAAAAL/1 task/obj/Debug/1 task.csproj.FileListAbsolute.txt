@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\1 task\bin\Debug\1 task.exe.config
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\1 task\bin\Debug\1 task.exe
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\1 task\bin\Debug\1 task.pdb
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\1 task\obj\Debug\1 task.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\1 task\obj\Debug\1 task.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\1 task\obj\Debug\1 task.exe
+C:\Users\HP\Desktop\PP2-LAB\FINAAAAAAL\1 task\obj\Debug\1 task.pdb

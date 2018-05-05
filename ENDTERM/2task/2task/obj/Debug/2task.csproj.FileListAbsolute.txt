@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\bin\Debug\2task.exe.config
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\bin\Debug\2task.exe
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\bin\Debug\2task.pdb
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\obj\Debug\_2task.Form1.resources
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\obj\Debug\_2task.Properties.Resources.resources
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\obj\Debug\2task.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\obj\Debug\2task.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\obj\Debug\2task.exe
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\obj\Debug\2task.pdb
+C:\Users\HP\Desktop\PP2-LAB\ENDTERM\2task\2task\obj\Debug\2task.csprojResolveAssemblyReference.cache
